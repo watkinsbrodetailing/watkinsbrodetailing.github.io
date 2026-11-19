@@ -61,3 +61,5 @@ footer { justify-content: center; }
   .service .button { justify-self: start; }
 }
 .comparison-labels { display: grid; grid-template-columns: 1fr 1fr; text-align: center; font-size: .875rem; font-weight: 750; color: var(--gold); padding: .4rem 0; }
+
+.pricing-flyer { max-width: 29rem; margin: 1.75rem 0 0; }

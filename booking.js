@@ -12,8 +12,15 @@ date.min = [
 ].join("-");
 
 function updateEstimate() {
-  const price = service.selectedOptions[0].dataset[vehicle.value];
-  estimate.textContent = price ? "Listed price: $" + price : "Choose a service and vehicle type to see the price.";
+  const selected = service.selectedOptions[0];
+  if (!selected.value || !vehicle.value) {
+    estimate.textContent = "Choose a service and vehicle type to see pricing.";
+    return;
+  }
+
+  estimate.textContent = vehicle.value === "car"
+    ? "Starts at $" + selected.dataset.price + " · Estimated time: " + selected.dataset.duration
+    : "Request a quote for this vehicle type.";
 }
 
 for (const link of document.querySelectorAll("[data-package]")) {

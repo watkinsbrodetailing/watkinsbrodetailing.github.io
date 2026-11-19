@@ -30,32 +30,56 @@
       <section id="services">
         <p class="eyebrow">Packages &amp; pricing</p>
         <h2>Choose your detail</h2>
+        <p>Starting prices are for standard cars. SUVs, vans, trucks, and vehicles with heavy buildup are quoted before booking. Times are estimates.</p>
         <div class="service-list">
           <article class="service">
             <div>
-              <h3>Interior Detail</h3>
-              <p>Vacuuming, carpet and mat cleaning, steam cleaning, and interior surfaces.</p>
+              <h3>Essential Full Detail</h3>
+              <p>Foam hand wash, wheel and tire cleaning, tire dressing, and exterior glass. Includes vacuuming seats, carpets, mats, and cargo area, plus a dash, console, and door panel wipe-down and interior glass.</p>
             </div>
-            <dl class="prices"><div><dt>Car</dt><dd>$130</dd></div><div><dt>SUV / Van / Truck</dt><dd>$160</dd></div></dl>
-            <a class="button compact" href="#book" data-package="0">Choose <span class="sr-only">Interior Detail</span></a>
+            <dl class="prices"><div><dt>Starting at</dt><dd>$180</dd></div><div><dt>Estimated time</dt><dd>2–3 hours</dd></div></dl>
+            <a class="button compact" href="#book" data-package="essential">Choose <span class="sr-only">Essential Full Detail</span></a>
+          </article>
+          <article class="service">
+            <div>
+              <h3>Deluxe Full Detail</h3>
+              <p>Everything in Essential, plus door jamb cleaning, steam cleaning on suitable surfaces, spot stain treatment, carpet and mat shampoo, leather cleaning and conditioning where applicable, and spray paint sealant.</p>
+            </div>
+            <dl class="prices"><div><dt>Starting at</dt><dd>$275</dd></div><div><dt>Estimated time</dt><dd>3–4.5 hours</dd></div></dl>
+            <a class="button compact" href="#book" data-package="deluxe">Choose <span class="sr-only">Deluxe Full Detail</span></a>
+          </article>
+          <article class="service">
+            <div>
+              <h3>Premium Full Detail</h3>
+              <p>Everything in Deluxe, plus deep shampoo and extraction on suitable cloth seats and carpets, detailed cleaning of crevices and high-touch areas, exterior paint decontamination, and a protective paint sealant.</p>
+            </div>
+            <dl class="prices"><div><dt>Starting at</dt><dd>$400</dd></div><div><dt>Estimated time</dt><dd>5–6.5 hours</dd></div></dl>
+            <a class="button compact" href="#book" data-package="premium">Choose <span class="sr-only">Premium Full Detail</span></a>
+          </article>
+          <article class="service">
+            <div>
+              <h3>Interior Detail</h3>
+              <p>Vacuum seats, carpets, mats, and cargo area. Clean the dash, console, vents, door panels, and interior glass. Includes steam cleaning on suitable surfaces, light stain treatment, and leather conditioning where applicable.</p>
+            </div>
+            <dl class="prices"><div><dt>Starting at</dt><dd>$130</dd></div><div><dt>Estimated time</dt><dd>1.5–2.5 hours</dd></div></dl>
+            <a class="button compact" href="#book" data-package="interior">Choose <span class="sr-only">Interior Detail</span></a>
           </article>
           <article class="service">
             <div>
               <h3>Exterior Detail</h3>
-              <p>Hand wash, wheel and tire cleaning, exterior glass, and paint protection.</p>
+              <p>Foam pre-rinse and hand wash, wheel and tire cleaning, light bug and road grime removal, exterior glass, hand drying, tire dressing, and spray wax protection.</p>
             </div>
-            <dl class="prices"><div><dt>Car</dt><dd>$130</dd></div><div><dt>SUV / Van / Truck</dt><dd>$160</dd></div></dl>
-            <a class="button compact" href="#book" data-package="1">Choose <span class="sr-only">Exterior Detail</span></a>
-          </article>
-          <article class="service">
-            <div>
-              <h3>Full Detail Package</h3>
-              <p>Interior and exterior detailing in one appointment.</p>
-            </div>
-            <dl class="prices"><div><dt>Car</dt><dd>$160</dd></div><div><dt>SUV / Van / Truck</dt><dd>$230</dd></div></dl>
-            <a class="button compact" href="#book" data-package="2">Choose <span class="sr-only">Full Detail Package</span></a>
+            <dl class="prices"><div><dt>Starting at</dt><dd>$130</dd></div><div><dt>Estimated time</dt><dd>1–2 hours</dd></div></dl>
+            <a class="button compact" href="#book" data-package="exterior">Choose <span class="sr-only">Exterior Detail</span></a>
           </article>
         </div>
+        <p class="note">Heavy pet hair, severe staining, and paint correction are quoted separately.</p>
+        <figure class="pricing-flyer">
+          <a href="watkins-bro-pricing-flyer.png" aria-label="Open the full-size Watkins Bro Detailing pricing flyer">
+            <img src="watkins-bro-pricing-flyer.png" loading="lazy" alt="Watkins Bro Detailing pricing flyer. Starting prices for standard cars: Essential $180, Deluxe $275, Premium $400, Interior $130, Exterior $130.">
+          </a>
+          <figcaption>Watkins Bro Detailing pricing flyer</figcaption>
+        </figure>
       </section>
       <section id="results">
         <p class="eyebrow">The difference a detail makes</p>
@@ -76,7 +100,7 @@
         <p>Choose your service and preferred date. We’ll confirm availability by text.</p>
         <form id="booking" hidden>
           <div class="fields">
-            <label>Service<select name="service" required><option value="">Choose a service</option><option value="0" data-car="130" data-large="160">Interior Detail</option><option value="1" data-car="130" data-large="160">Exterior Detail</option><option value="2" data-car="160" data-large="230">Full Detail Package</option></select></label>
+            <label>Service<select name="service" required><option value="">Choose a service</option><option value="essential" data-price="180" data-duration="2–3 hours">Essential Full Detail</option><option value="deluxe" data-price="275" data-duration="3–4.5 hours">Deluxe Full Detail</option><option value="premium" data-price="400" data-duration="5–6.5 hours">Premium Full Detail</option><option value="interior" data-price="130" data-duration="1.5–2.5 hours">Interior Detail</option><option value="exterior" data-price="130" data-duration="1–2 hours">Exterior Detail</option></select></label>
             <label>Vehicle type<select name="vehicle" required><option value="">Choose a vehicle type</option><option value="car">Car</option><option value="large">SUV / Van / Truck</option></select></label>
             <label>Preferred date<input type="date" name="date" required></label>
             <label>Service ZIP code<input name="zip" inputmode="numeric" autocomplete="postal-code" pattern="[0-9]{5}" maxlength="5" required></label>
