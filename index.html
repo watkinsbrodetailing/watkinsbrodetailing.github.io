@@ -96,8 +96,18 @@
       </section>
       <section id="book">
         <p class="eyebrow">Mobile appointments</p>
-        <h2>Request a booking</h2>
-        <p>Choose your service and preferred date. We’ll confirm availability and your final quote by text.</p>
+        <h2>Book and pay online</h2>
+        <p>Standard cars can book online every day from 8 a.m. to 7 p.m. Eastern. Choose a package and an available time, enter your service address, then pay the listed price through Stripe to confirm.</p>
+        <div class="service-list">
+          <a class="button secondary" href="https://cal.com/watkinsbrodetailing/essential-full-detail">Essential Full Detail · $180</a>
+          <a class="button secondary" href="https://cal.com/watkinsbrodetailing/deluxe-full-detail">Deluxe Full Detail · $275</a>
+          <a class="button secondary" href="https://cal.com/watkinsbrodetailing/premium-full-detail">Premium Full Detail · $400</a>
+          <a class="button secondary" href="https://cal.com/watkinsbrodetailing/interior-detail">Interior Detail · $130</a>
+          <a class="button secondary" href="https://cal.com/watkinsbrodetailing/exterior-detail">Exterior Detail · $130</a>
+        </div>
+        <details>
+          <summary>Request a quote for a larger vehicle or extra work</summary>
+          <p>For SUVs, vans, trucks, or vehicles that need extra work, choose a service and preferred date. We’ll confirm availability and your final quote by text.</p>
         <p>After you approve the quote and we confirm your appointment, we’ll ask for your email and send a secure Stripe invoice for the full amount. Open the invoice and select <strong>Pay online</strong> to complete your payment.</p>
         <form id="booking" hidden>
           <div class="fields">
@@ -114,6 +124,7 @@
           <div id="message-fallback" hidden><label>Copy your request if your messaging app doesn’t open<textarea id="request-text" rows="5" readonly></textarea></label></div>
         </form>
         <noscript><p><a href="sms:+12403020159">Text Watkins Bros to request a booking</a> or call <a href="tel:+12403020159">240-302-0159</a>.</p></noscript>
+        </details>
       </section>
     <section id="process">
         <h2>How Our Mobile Detailing Works</h2>
